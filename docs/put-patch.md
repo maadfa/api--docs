@@ -9,16 +9,21 @@ PUT is used when you want to update something completely on the server. It repla
 # Example: Update a User Profile
 If you have a user with ID 5, and you want to update all their information.Then you can use PUT request.
 
+
+``` 
 https://myapp.com/api/users/5
+``` 
 
 Data You Send
 
+
+``` 
 {
   "name": "Ali Raza",
   "email": "ali@example.com",
   "phone": "03001234567"
 }
-
+``` 
 This tells the server to rplace everything about user 5 with this new data.”
 
  So, PUT is used when you're sending the complete updated data.

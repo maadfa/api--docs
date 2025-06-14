@@ -5,10 +5,14 @@ DELETE is used when you want to remove something from the server .It includes de
 It is like clicking a “Delete” button which removes the item .
 
 # Delete a Bitcoin Alert
+
+
 Let’s say you created a Bitcoin price alert with ID 3, and now you want to delete it
 
-'''ruby
+
+``` ruby
 https://myapp.com/api/alerts/3
-'''
+``` 
+
 This tells the server to Delete the alert that has ID 3.You don’t need to send any data .The server knows what to delete based on the ID in the URL.
 
