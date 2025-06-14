@@ -10,7 +10,7 @@ theme:
 
 nav:
   - Home: index.md
-  - GET Request: get-request.md
+  - GET Request: get-api.md
   - POST Request: post-request.md
   - PUT & PATCH: put-patch.md
   - DELETE Request: delete.md
