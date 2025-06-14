@@ -3,11 +3,10 @@
 
 **APIs (Application Programming Interfaces)** are like bridges that let apps, websites, and devices talk to each other.
 
-!!! note "API Explained"A – Application: A software program designed to do specific task.
-P – Programming: The logic or code that tells the application how to behave.
-I – Interface: The point of interaction  or connection between two software systems.
-
-
+!!! note "API Explained"
+    **A – Application:** A software program designed to do a specific task.  
+    **P – Programming:** The logic or code that tells the application how to behave.  
+    **I – Interface:** The point of interaction or connection between two software systems.
 
 An API is an interface through which applications "talk" to each other by sending requests and receiving responses. These interactions occur by  following  rules or "protocols" present  in the API documentation.
 
