@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../delete/">
+        <link rel="prev" href="..">
       
+      
+        <link rel="next" href="../post-request/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>REST API (Full) - My API Docs</title>
+        <title>GET Request - My API Docs</title>
       
     
     
@@ -60,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-rest" class="md-skip">
+        <a href="#get" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              REST API (Full)
+              GET Request
             
           </span>
         </div>
@@ -184,9 +186,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../get-api/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -260,11 +264,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../rest-api/" class="md-tabs__link">
         
   
   
@@ -336,10 +338,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../get-api/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -350,6 +361,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -424,32 +436,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    REST API (Full)
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../rest-api/" class="md-nav__link">
         
   
   
@@ -460,35 +450,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-rest-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      How REST Works
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -513,23 +474,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-rest-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      How REST Works
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -544,11 +488,63 @@
 
 
 
-<h1 id="what-is-rest">What is REST?<a class="headerlink" href="#what-is-rest" title="Permanent link">&para;</a></h1>
-<p>REST stands for Representational State Transfer. It is a way for computers (like your phone or laptop) to talk to each other over the internet. REST is mostly used when apps or websites need to get data from a server or send data to it.</p>
-<h2 id="how-rest-works">How REST Works<a class="headerlink" href="#how-rest-works" title="Permanent link">&para;</a></h2>
-<p>REST uses simple rules and methods to make communication easy. It works with the HTTP protocol, which is the same system used by websites.</p>
-<p>Some common REST methods are:</p>
+<h1 id="get">GET<a class="headerlink" href="#get" title="Permanent link">&para;</a></h1>
+<p>GET is the most commonly used type of request in REST APIs. It is used to get or fetch data from the server.A GET request is sent behind the scenes when you open a website or view your profile in an app to ask the server for that information. For example, if you want to see the current Bitcoin price or check the weather in your city, your device sends a GET request to the API, and the server responds with the latest data. GET requests are safe because they do not change anything </p>
+<p>GET request is used to get data from the server like reading a user’s profile.A GET request is used when you want to get information from a server. You are not sending or changing anything.You are just asking the server to show you something.</p>
+<p>## Example : Bitcoin API ( To Get current Bitcoin price)</p>
+<p>You can send a GET request to a public Bitcoin API.</p>
+<p>'''bash
+https://api.coindesk.com/v1/bpi/currentprice.json
+'''</p>
+<p>This URL sends a GET request to Coindesk’s server.The server replies with Bitcoin price data in JSON format</p>
+<p>Sample Response:</p>
+<p>'''json
+{</p>
+<p>"time": {</p>
+<div class="codehilite"><pre><span></span><code>&quot;updated&quot;: &quot;Jun 14, 2025 12:03:00 UTC&quot;
+</code></pre></div>
+
+<p>},</p>
+<p>"bpi": {</p>
+<div class="codehilite"><pre><span></span><code>&quot;USD&quot;: {
+
+  &quot;rate&quot;: &quot;66,345.20&quot;
+
+}
+</code></pre></div>
+
+<p>}</p>
+<p>}
+'''</p>
+<h1 id="weather-api-getting-current-weather-info">Weather API (Getting current weather info)<a class="headerlink" href="#weather-api-getting-current-weather-info" title="Permanent link">&para;</a></h1>
+<p>You want to check the weather in London. You can use a weather API like OpenWeatherMap.</p>
+<p>Example URL:</p>
+<p>'''bash
+https://api.openweathermap.org/data/2.5/weather?q=London&amp;appid=YOUR_API_KEY
+'''</p>
+<p>This sends a GET request to the OpenWeatherMap server to get weather data.The server returns weather data for London.</p>
+<h2 id="sample-response">Sample response<a class="headerlink" href="#sample-response" title="Permanent link">&para;</a></h2>
+<p>'''json
+{</p>
+<p>"weather": [</p>
+<div class="codehilite"><pre><span></span><code>{
+
+  &quot;main&quot;: &quot;Clouds&quot;,
+
+  &quot;description&quot;: &quot;overcast clouds&quot;
+
+}
+</code></pre></div>
+
+<p>],</p>
+<p>"main": {</p>
+<div class="codehilite"><pre><span></span><code>&quot;temp&quot;: 289.5
+</code></pre></div>
+
+<p>},</p>
+<p>"name": "London"</p>
+<p>}
+'''</p>
 
 
 
