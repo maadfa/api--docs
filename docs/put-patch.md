@@ -28,7 +28,7 @@ This tells the server to rplace everything about user 5 with this new data.”
 
  So, PUT is used when you're sending the complete updated data.
 
- # PATCH 
+# PATCH 
 
  PATCH is a type of request that is used in REST APIs to make a small update or partial change in data on the server. Unlike PUT, which replaces all of the data, PATCH is used when you only want to change one or two specific fields. For example, if a user wants to update just their email address without changing their name or phone number, a PATCH request is sent with only the new email. The server then updates only that part of the data,and rest of data remains the same. PATCH is helpful when you don’t want to resend all the information.
 
