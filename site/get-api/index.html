@@ -491,24 +491,24 @@
 <h1 id="get">GET<a class="headerlink" href="#get" title="Permanent link">&para;</a></h1>
 <p>GET is the most commonly used type of request in REST APIs. It is used to get or fetch data from the server.A GET request is sent behind the scenes when you open a website or view your profile in an app to ask the server for that information. For example, if you want to see the current Bitcoin price or check the weather in your city, your device sends a GET request to the API, and the server responds with the latest data. GET requests are safe because they do not change anything </p>
 <p>GET request is used to get data from the server like reading a user’s profile.A GET request is used when you want to get information from a server. You are not sending or changing anything.You are just asking the server to show you something.</p>
-<p>## Example : Bitcoin API ( To Get current Bitcoin price)</p>
+<h1 id="example-bitcoin-api-to-get-current-bitcoin-price">Example : Bitcoin API ( To Get current Bitcoin price)<a class="headerlink" href="#example-bitcoin-api-to-get-current-bitcoin-price" title="Permanent link">&para;</a></h1>
 <p>You can send a GET request to a public Bitcoin API.</p>
 <p>'''bash
 https://api.coindesk.com/v1/bpi/currentprice.json
 '''</p>
 <p>This URL sends a GET request to Coindesk’s server.The server replies with Bitcoin price data in JSON format</p>
-<p>Sample Response:</p>
+<h1 id="sample-response">Sample Response:<a class="headerlink" href="#sample-response" title="Permanent link">&para;</a></h1>
 <p>'''json
 {</p>
-<p>"time": {</p>
-<div class="codehilite"><pre><span></span><code>&quot;updated&quot;: &quot;Jun 14, 2025 12:03:00 UTC&quot;
+<p>time: {</p>
+<div class="codehilite"><pre><span></span><code>updated: Jun 14, 2025 12:03:00 UTC
 </code></pre></div>
 
 <p>},</p>
-<p>"bpi": {</p>
-<div class="codehilite"><pre><span></span><code>&quot;USD&quot;: {
+<p>bpi: {</p>
+<div class="codehilite"><pre><span></span><code>USD: {
 
-  &quot;rate&quot;: &quot;66,345.20&quot;
+  rate: 66,345.20
 
 }
 </code></pre></div>
@@ -523,26 +523,26 @@ https://api.coindesk.com/v1/bpi/currentprice.json
 https://api.openweathermap.org/data/2.5/weather?q=London&amp;appid=YOUR_API_KEY
 '''</p>
 <p>This sends a GET request to the OpenWeatherMap server to get weather data.The server returns weather data for London.</p>
-<h2 id="sample-response">Sample response<a class="headerlink" href="#sample-response" title="Permanent link">&para;</a></h2>
+<h2 id="sample-response_1">Sample response<a class="headerlink" href="#sample-response_1" title="Permanent link">&para;</a></h2>
 <p>'''json
 {</p>
-<p>"weather": [</p>
+<p>weather: [</p>
 <div class="codehilite"><pre><span></span><code>{
 
-  &quot;main&quot;: &quot;Clouds&quot;,
+  main: Clouds,
 
-  &quot;description&quot;: &quot;overcast clouds&quot;
+  description : overcast clouds
 
 }
 </code></pre></div>
 
 <p>],</p>
-<p>"main": {</p>
-<div class="codehilite"><pre><span></span><code>&quot;temp&quot;: 289.5
+<p>main: {</p>
+<div class="codehilite"><pre><span></span><code>temp : 289.5
 </code></pre></div>
 
 <p>},</p>
-<p>"name": "London"</p>
+<p>name: London</p>
 <p>}
 '''</p>
 
