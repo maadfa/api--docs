@@ -4,7 +4,7 @@ GET is the most commonly used type of request in REST APIs. It is used to get or
 
 GET request is used to get data from the server like reading a user’s profile.A GET request is used when you want to get information from a server. You are not sending or changing anything.You are just asking the server to show you something.
 
- ## Example : Bitcoin API ( To Get current Bitcoin price)
+# Example : Bitcoin API ( To Get current Bitcoin price)
 
  You can send a GET request to a public Bitcoin API.
 
@@ -14,23 +14,23 @@ https://api.coindesk.com/v1/bpi/currentprice.json
 
 This URL sends a GET request to Coindesk’s server.The server replies with Bitcoin price data in JSON format
 
-Sample Response:
+# Sample Response:
 
 
 '''json
 {
 
-  "time": {
+  time: {
 
-    "updated": "Jun 14, 2025 12:03:00 UTC"
+    updated: Jun 14, 2025 12:03:00 UTC
 
   },
 
-  "bpi": {
+  bpi: {
 
-    "USD": {
+    USD: {
 
-      "rate": "66,345.20"
+      rate: 66,345.20
 
     }
 
@@ -58,25 +58,25 @@ This sends a GET request to the OpenWeatherMap server to get weather data.The se
 '''json
 {
 
-  "weather": [
+  weather: [
 
     {
 
-      "main": "Clouds",
+      main: Clouds,
 
-      "description": "overcast clouds"
+      description : overcast clouds
 
     }
 
   ],
 
-  "main": {
+  main: {
 
-    "temp": 289.5
+    temp : 289.5
 
   },
 
-  "name": "London"
+  name: London
 
 }
 '''
