@@ -6,7 +6,15 @@ REST uses simple rules and methods to make communication easy. It works with the
 
 Some common REST methods are:
 
+GET 
 
+POST 
+
+PUT
+
+PATCH 
+
+DELETE
 
 
 
